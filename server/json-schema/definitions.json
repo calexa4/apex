@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://apexinspection.com/api/json-schema/definitions.json#",
+  "title": "definitions",
+  "type": "object",
+  "definitions": {
+    "text": {
+      "type": "string",
+      "pattern": "^(\\s*[^\\s]\\s*){1,}$",
+      "minLength": 1
+    }
+  }
+}

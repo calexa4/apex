@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://apexinspection.com/api/json-schema/document-validate.json#",
+  "title": "document-validate",
+  "type": "object",
+  "required": ["bucket", "key"],
+  "properties": {
+    "bucket": {
+      "$ref": "definitions.json#/definitions/text"
+    },
+    "key": {
+      "$ref": "definitions.json#/definitions/text"
+    }
+  },
+  "errorMessage": {
+    "required": {
+      "bucket": "Bucket must be specified!",
+      "key": "Key must be specified!"
+    },
+    "properties": {
+      "bucket": "Bucket must be a valid string!",
+      "key": "Key must be a valid string!"
+    }
+  }
+}
